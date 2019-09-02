@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #root{
+                width: 500px;
+                overflow-x:auto; 
+                flex-shrink: 0;
+            }
+            .reader{
+                display: flex;
+                padding-left:50px;
+            }
+            .triangle-down{
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 10px solid #333;
+                margin-right:10px;
+                cursor: pointer;
+            }
+            .triangle-right {
+                width: 0;
+                height: 0;
+                border-top: 5px solid transparent;
+                border-left: 10px solid #333;
+                border-bottom: 5px solid transparent;
+                margin-right:10px;
+                cursor:pointer;
+            }
+            .box{
+                display: flex;
+                flex-direction: column;
+            }
+            .hide-children > .box {
+                display: none;
+            }
+            .own{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            .type-name{
+                cursor: default;
+                width:50px;
+            }
+        </style>
+    </head>
+    <body>
+        <video id="myVideo" src="" controls autoplay></video>
+        <div id="player"></div>
+        <script src="myFetch.js"></script>
+        <script src="mp4-reader.js"></script>
+        <script>
+            mp4Reader()
+        </script>
+    </body>
+</html>

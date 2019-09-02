@@ -63,7 +63,7 @@ hint：这个特殊的track并不包含媒体数据，而是包含了一些将�
 
 sample是媒体数据存储的单位，存储在media的chunk中，chunk和sample的长度均可互不相同，如下图所示。
 
-<img src="https://raw.githubusercontent.com/HanLess/experience/master/js/%E8%A7%86%E9%A2%91%E6%8A%80%E6%9C%AF/img/chunk.webp" />
+<img src="https://raw.githubusercontent.com/HanLess/video/master/img/chunk.webp" />
 
 #### stsd（Sample Description Box）
 
@@ -117,7 +117,7 @@ box header和version字段后会有一个entry count字段，根据entry的个�
 
 #### mp4 box 结构图
 
-<img src="https://raw.githubusercontent.com/HanLess/experience/master/js/%E8%A7%86%E9%A2%91%E6%8A%80%E6%9C%AF/img/%E7%BB%93%E6%9E%84.jpg%40932w_1380h.webp" />
+<img src="https://raw.githubusercontent.com/HanLess/video/master/img/结构.jpg%40932w_1380h.webp" />
 
 作者：小林家的垃圾王R
 https://www.bilibili.com/read/cv980333/

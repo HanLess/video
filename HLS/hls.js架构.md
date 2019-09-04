@@ -36,3 +36,13 @@ registerListeners () {
 - on , emit 都是继承 EventEmitter 的方法
 
 #### hls 所有流程都是这个逻辑触发
+
+流视频的处理思路与 MSE 一样，都是分片请求视频流，进行转码处理后播放，在这里视频格式的处理的细节不再深究
+
+都是基于 MediaSource ，MSE 模式是自己决定每次请求多少数据（arrayBuffer），而 HLS 是根据 m3u8 来分片请求数据（arrayBuffer）
+
+
+
+
+
+

@@ -41,6 +41,6 @@ registerListeners () {
 
 都是基于 MediaSource ，MSE 模式是自己决定每次请求多少数据（arrayBuffer），而 HLS 是根据 m3u8 来分片请求数据（arrayBuffer）
 
-#### 请求 ts 资源后，拿到 arrayBuffer 数据，hls 会进行转码，MPEG-TS -> ISO-BMFF，由 demux 完成
+#### 请求 ts 资源后，拿到 arrayBuffer 数据，hls 会进行转码，MPEG-TS -> ISO-BMFF，由 demux + remux 两部分完成
 
 

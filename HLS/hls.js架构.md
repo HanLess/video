@@ -41,10 +41,6 @@ registerListeners () {
 
 都是基于 MediaSource ，MSE 模式是自己决定每次请求多少数据（arrayBuffer），而 HLS 是根据 m3u8 来分片请求数据（arrayBuffer）
 
-#### 请求 ts 资源后，拿到 arrayBuffer 数据，hls 会进行转码，MPEG-TS -> ISO-BMFF
-
-ISO-BMFF 格式是一个标准，mp4 格式文件也遵守这个标准，从源码来看，hls.js 并没有像 griffith 那样处理二进制文件，而是直接 sourceBuffer.appendBuffer(buf)，我理解这里请求的 ts 资源，是像 fmp4 一样，可以直接被 video 处理的
-
-
+#### 请求 ts 资源后，拿到 arrayBuffer 数据，hls 会进行转码，MPEG-TS -> ISO-BMFF，由 demux 完成
 
 
